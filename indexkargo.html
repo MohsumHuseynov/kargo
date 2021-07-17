@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kargo.az - etibarli kargonun adresi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kargo</title>
+    <style>
+        body {
+            width: 100%;
+        }
+
+        #kar1 {
+            width: 100%;
+            background: #eee;
+        }
+
+        .kar2 {
+            padding-right: 40px;
+            padding-left: 40px;
+        }
+
+        .ico1 {
+            float: right;
+        }
+
+        #baj {
+            width: 100%;
+            height: 75px;
+            position: relative;
+            position: fixed;
+            z-index: 100;
+            padding-left: 30px;
+            padding-right: 30px;
+            background: white;
+        }
+
+        #bah {
+            float: right;
+            padding-top: 30px;
+            padding-right: 250px;
+        }
+
+        .ara {
+            display: inline-block;
+
+        }
+
+        #haf {
+            width: 100%;
+            height: 720px;
+            background: url(aka.jpg);
+            background-size: 100%;
+
+        }
+
+        #hal {
+            width: 70%;
+            height: 277px;
+            margin-right: 15%;
+            margin-left: 15%;
+            position: relative;
+            padding-top: 250px;
+
+        }
+
+        #hal1 {
+            font-size: 3.5rem;
+            font-weight: 150px;
+            line-height: 0.5;
+            color: white;
+
+        }
+
+        #hal2 {
+            font-size: 1.5rem;
+            font-weight: 100px;
+            color: #eee;
+        }
+
+        .sual {
+            border: 1px solid rgba(238, 238, 238, 0.589);
+            width: 60%;
+            height: 50px;
+            font-size: 1rem;
+        }
+
+        .gonder {
+            border: 1px solid #e97408;
+            color: #000000;
+            background: #e97408;
+            width: 30%;
+            height: 50px;
+            font-size: 1.2rem;
+        }
+
+        #kaj {
+            width: 100%;
+            height: 330px;
+
+        }
+
+        #kah {
+            width: 70%;
+            height: 277px;
+            margin-right: 15%;
+            margin-left: 15%;
+            position: relative;
+            margin-top: -30px;
+
+        }
+
+        .kaf {
+            display: inline-block;
+            width: 33%;
+            height: 400px;
+
+        }
+
+        .kaf1 {
+            width: 90%;
+            height: 50%;
+        }
+
+        .kaf2 {
+            text-align: center;
+            color: #e97408;
+            font-size: 1.5rem;
+        }
+
+        .kaf3 {
+            text-align: center;
+            padding-left: 10%;
+            padding-right: 20%;
+        }
+
+        #tay {
+            width: 100%;
+            height: 750px;
+            background: rgba(228, 222, 222, 0.507);
+        }
+
+        #tay1 {
+            text-align: center;
+            color: #e97408;
+            font-size: 3rem;
+            padding-top: 50px;
+        }
+
+        #tay2 {
+            text-align: center;
+            color: black;
+            font-size: 1.8rem;
+        }
+
+        #tay3 {
+            width: 70%;
+            margin-right: 15%;
+            margin-left: 15%;
+        }
+
+        .tay3 {
+            height: 250px;
+            width: 33%;
+            display: inline-block;
+        }
+
+        .tay4 {
+            border: 1px solid white;
+            background: white;
+            width: 90%;
+            height: 90%;
+        }
+
+        .tay5 {
+            padding-left: 20px;
+            margin-top: -10px;
+            font-size: 1.5rem;
+        }
+
+        .tay6 {
+            padding-left: 20px;
+            padding-right: 5px;
+            font-size: 1rem;
+        }
+
+        #vay {
+            width: 100%;
+            height: 400px;
+        }
+
+        #vay1 {
+            text-align: center;
+            color: #e97408;
+            font-size: 3rem;
+            padding-top: 50px;
+
+        }
+
+        #vay2 {
+            text-align: center;
+            color: black;
+            font-size: 1.8rem;
+        }
+
+        #lay {
+            width: 100%;
+            height: 700px;
+            background: rgba(228, 222, 222, 0.507);
+        }
+
+        #lay1 {
+            width: 70%;
+            padding-left: 15%;
+            padding-right: 15%;
+
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            margin-top: -150px;
+        }
+
+        #lay2 {
+            padding-left: 20%;
+            padding-right: 15%;
+            padding-top: 100px;
+        }
+
+        .lay2 {
+            display: inline-block;
+            width: 24%;
+            height: 150px;
+            text-align: center;
+        }
+
+        .lay3 {
+            font-size: 5em;
+            color: #e97408;
+        }
+
+        .lay4 {
+            font-size: 2em;
+            color: black;
+        }
+
+        #fay {
+            width: 100%;
+            height: 1250px;
+        }
+
+        #fay1 {
+
+            height: 850px;
+            width: 70%;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+        .fay1 {
+
+            display: inline-block;
+            width: 32%;
+            height: 500px;
+        }
+
+        .fay2 {
+            border: 1px solid black;
+            width: 95%;
+            height: 95%;
+        }
+
+        #fay4 {
+            text-align: center;
+            color: #e97408;
+            font-size: 3rem;
+            padding-top: 50px;
+
+        }
+
+        #fay5 {
+            text-align: center;
+            color: black;
+            font-size: 1.8rem;
+        }
+
+        .fay3 {
+            width: 50%;
+            height: 30%;
+            padding-top: 10%;
+            padding-left: 25%;
+            border-radius: 100%;
+        }
+
+        .fay6 {
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+
+        }
+
+        .fay7 {
+            text-align: center;
+            color: black;
+            font-size: 2.5rem;
+        }
+
+        .fay8 {
+            text-align: center;
+            color: black;
+            font-size: 2rem;
+        }
+
+        .fay9 {
+            text-align: center;
+            color: black;
+            font-size: 1.2rem;
+        }
+
+        .fay10 {
+            width: 60%;
+            padding-left: 20%;
+            height: 10%;
+        }
+
+        #nay {
+            width: 100%;
+            height: 700px;
+            background: rgba(228, 222, 222, 0.507)
+        }
+
+        #nay1 {
+            width: 70%;
+            height: 60%;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+        .nay {
+            display: inline-block;
+            width: 33%;
+            height: 100%;
+        }
+
+        .nay1 {
+
+            width: 95%;
+            height: 100%;
+            border: 1px solid white;
+            background: white;
+        }
+
+        #nay2 {
+            text-align: center;
+            color: #e97408;
+            font-size: 3rem;
+            padding-top: 50px;
+
+        }
+
+        #nay3 {
+            text-align: center;
+            color: black;
+            font-size: 1.8rem;
+        }
+
+        .nay2 {
+            text-align: center;
+            color: black;
+            font-size: 2rem;
+        }
+
+        .nay3 {
+            text-align: center;
+            color: #e97408;
+            font-size: 3rem;
+        }
+
+        .nay4 {
+            width: 60%;
+            height: 40px;
+            margin-left: 20%;
+            background: #e97408;
+            font-size: 1.2em;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        #ok {
+            width: 25px;
+            height: 25px;
+        }
+
+        #ok1 {
+            display: inline;
+            font-size: 1.2rem;
+        }
+
+        #ray {
+            width: 100%;
+            height: 800px;
+        }
+
+        #ray1 {
+            width: 70%;
+            height: 80%;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+        .ray1 {
+            display: inline-block;
+            width: 48%;
+            height: 120px;
+
+        }
+
+        #ray2 {
+            text-align: center;
+            color: #e97408;
+            font-size: 3rem;
+            padding-top: 50px;
+        }
+
+        .ray2 {
+            display: inline-block;
+            font-size: 1.5rem;
+            line-height: 0.5rem;
+        }
+
+        #pay {
+            width: 100%;
+            height: 700px;
+        }
+
+        #pay1 {
+            width: 70%;
+            height: 80%;
+            margin-left: 15%;
+            margin-right: 15%;
+            padding-top: 5%;
+            padding-bottom: 10%;
+        }
+
+        #pay2 {
+            display: inline-block;
+            width: 49%;
+            height: 100%;
+        }
+
+        #pay3 {
+            width: 100%;
+            height: 100%;
+        }
+
+        .pay {
+            font-size: 3rem;
+        }
+
+        .pay1 {
+            font-size: 3rem;
+            color: #e97408;
+        }
+
+        .pay2 {
+            font-size: 2rem;
+        }
+
+        ul {
+            font-size: 1.5rem;
+        }
+
+
+        #yay {
+            width: 100%;
+            height: 700px;
+            background-color: rgba(238, 238, 238, 0.589)
+        }
+
+        #yay0 {
+            text-align: center;
+            color: #e97408;
+            font-size: 3rem;
+            padding-top: 50px;
+        }
+
+        #yay1 {
+            width: 70%;
+            height: 80%;
+            margin-left: 15%;
+            margin-right: 15%;
+            padding-bottom: 10%;
+
+        }
+
+        #yay2 {
+            display: inline-block;
+            width: 60%;
+            height: 90%;
+
+        }
+
+        #yay3 {
+            display: inline-block;
+            width: 35%;
+            height: 60%;
+            float: right;
+            background-color: white;
+        }
+
+        #yay4 {
+            display: inline-block;
+            width: 80%;
+            height: 100%;
+            border-left: 10%;
+
+        }
+
+        .yay {
+            width: 100%;
+            height: 60px;
+
+        }
+
+        .yay1 {
+            display: inline-block;
+            width: 49%;
+            height: 40px;
+
+        }
+
+        .yay2 {
+            width: 99%;
+            height: 90%;
+        }
+
+        .yay3 {
+            display: inline-block;
+            width: 49%;
+            height: 40px;
+
+        }
+
+        #yay4 {
+            width: 100%;
+            height: 60px;
+        }
+
+        .yay4 {
+            width: 100%;
+            height: 70%;
+
+        }
+
+        .yay5 {
+            width: 100%;
+            height: 320px;
+        }
+
+        .yay6 {
+            width: 100%;
+            height: 60px;
+        }
+
+        .yay7 {
+            width: 40%;
+            height: 70%;
+            background-color: #e97408;
+            font-size: 1.5rem;
+        }
+
+        .yay8 {
+            font-size: 2rem;
+        }
+
+        .yay9 {
+            font-size: 1.5rem;
+        }
+
+        #day {
+            width: 100%;
+            height: 800px;
+            background-color: black;
+
+        }
+
+        #day1 {
+
+            width: 70%;
+            height: 80%;
+            margin-left: 15%;
+            margin-right: 15%;
+            padding-top: 10%;
+
+        }
+
+        #day2 {
+            width: 100%;
+            height: 20%;
+
+        }
+
+        #day3 {
+            text-align: center;
+            font-size: 1rem;
+            color: white;
+        }
+
+        .day {
+            display: inline-block;
+            width: 32%;
+            height: 60%;
+
+        }
+
+        .day1 {
+            color: white;
+        }
+
+        .day2 {
+            font-size: 1.5rem;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="kar1">
+        <div class="kar2">
+            <img width="3%" src="mail.png" alt=""> <span>info@kargo.az</span>
+            <img width="3%" src="phone.png" alt=""> <span>+994555000000</span>
+            <span class="ico1">Facebook</span> <img class="ico1" width="3%" src="fb.png" alt="">
+            <span class="ico1">Twitter</span> <img class="ico1" width="3%" src="twit.png" alt="">
+        </div>
+    </div>
+    <div id="baj">
+        <img style="width: 20%; height: 100%;" src="kargo.png" alt="">
+        <div id="bah">
+            <span class="ara">ANA SƏHİFƏ</span>
+            <span class="ara">HAQQIMIZDA</span>
+            <span class="ara">XİDMƏTLƏRİMİZ</span>
+            <span class="ara">ÜNVANLARIMIZ</span>
+        </div>
+
+    </div>
+    <div id="haf">
+        <div id="hal">
+            <h1 id="hal1">SİZİN ETİBARLI KARGONUZ</h1>
+            <h2 id="hal2">Ölkədaxili və Ölkəxarici daşımalarınızı bizə etibar edin</h2>
+            <input type="text" class="sual" placeholder="sualınızı bizə göndərin">
+            <input type="submit" class="gonder" value="Göndər">
+        </div>
+    </div>
+    <div id="kaj">
+        <div id="kah">
+            <div class="kaf">
+                <img class="kaf1" src="gemi.jpg" alt="">
+                <h3 class="kaf2">Dəniz Nəqliyyatı</h3>
+                <p class="kaf3">Dəniz daşımaları bizimlə daha ucuz və təhlükəsizdir</p>
+            </div>
+            <div class="kaf">
+                <img class="kaf1" src="ucak.jpg" alt="">
+                <h3 class="kaf2">Hava Nəqliyyatı</h3>
+                <p class="kaf3">Xarici ölkələrdən olan daşımalarınız bizimlə sərfəlidir</p>
+            </div>
+            <div class="kaf">
+                <img class="kaf1" src="tir.jpg" alt="">
+                <h3 class="kaf2">Quru Nəqliyyatı</h3>
+                <p class="kaf3">Şəhərlərarası daşımalar üçün quru nəqliyyatı idealdır</p>
+            </div>
+        </div>
+    </div>
+    <div id="tay">
+        <h1 id="tay1">XİDMƏTLƏRİMİZ</h1>
+        <h2 id="tay2">Kargo şirkəti olaraq sizə xidmət etməkdən qürur duyuruq</h2>
+        <div id="tay3">
+            <div class="tay3">
+                <div class="tay4">
+                    <img src="gemi.png" alt="">
+                    <br>
+                    <h3 class="tay5">Dəniz daşıması</h3>
+                    <p class="tay6">Dəniz daşınması ən etibarlı və təhlükəsiz daşınma növü hesab olunur. Sahilyanı
+                        ölkələrdən dəniz yolu ilə yükdaşınmasını bizə etibar edə bilərsiniz</p>
+                </div>
+            </div>
+            <div class="tay3">
+                <div class="tay4">
+                    <img src="ucak.png" alt="">
+                    <br>
+                    <h3 class="tay5">Hava daşıması</h3>
+                    <p class="tay6">Hava nəqliyyatı vasitəsi ilə daşınma ən sürətli daşınma növüdür.
+                        Uzaq ölkələrdən yüklərinizin tez bir zamnanda çatdırılmasını təmin edirik</p>
+                </div>
+            </div>
+            <div class="tay3">
+                <div class="tay4">
+                    <img src="tir.png" alt="">
+                    <br>
+                    <h3 class="tay5">Quru daşıması</h3>
+                    <p class="tay6">Quru yolları ilə daşınma ən ucuz başa gələn daşınma növüdür.
+                        Şəhərlər və ölkələrarası olan yüklərin daşınmasını sərfəli qiymətlərlə həyata keçiririk</p>
+                </div>
+            </div>
+            <div class="tay3">
+                <div class="tay4">
+                    <img src="anbar.png" alt="">
+                    <br>
+                    <h3 class="tay5">Depo xidməti</h3>
+                    <p class="tay6">Sizə ən etibarlı və ən ucuz depolama xidmətlərini təklif edirik. Xarici ölkələrdə
+                        olan yüklərinizi depoya yerləşdirib etibarlı şəkildə sizin üçün saxlayırıq</p>
+                </div>
+            </div>
+            <div class="tay3">
+                <div class="tay4">
+                    <img src="das.png" alt="">
+                    <br>
+                    <h3 class="tay5">Çatdırılma xidməti</h3>
+                    <p class="tay6">Bizim şirkətə verdiyiniz istər şəhərlərarsı, istərsədə ölkələrarsı yükdaşıma
+                        sifarişlərini sizə birbaşa çatdırırıq. Artıq yüklərinizin qapınıza gələcək.</p>
+                </div>
+            </div>
+            <div class="tay3">
+                <div class="tay4">
+                    <img src="cat.png" alt="">
+                    <br>
+                    <h3 class="tay5">Qapıda təslimat</h3>
+                    <p class="tay6">Biz sizin sifarişlərinizi sizin qapınızda sizə təhvil veririk. Sənədləşmə üçün ofisə
+                        gəlməyə ehtiyac yoxdur, qapınızda təslimat edirik</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="vay">
+        <h1 id="vay1">HAQQIMIZDA</h1>
+        <p id="vay2">Biz sizə ən ucuz və ən etibarlı yükdaşıma xidmətlərini təklif edirik</p>
+    </div>
+    <div id="lay">
+        <div id="lay1">
+            <video controls>
+                <source src="video.mp4">
+            </video>
+        </div>
+        <div id="lay2">
+            <div class="lay2">
+                <span class="lay3"><span data-number="50">50</span>+</span> <br>
+                <span class="lay4">Tərəfdaş</span>
+            </div>
+            <div class="lay2">
+                <span class="lay3"><span data-number="100">100</span>+</span> <br>
+                <span class="lay4">Filial</span>
+            </div>
+            <div class="lay2">
+                <span class="lay3"><span data-number="75">75</span>+</span> <br>
+                <span class="lay4">Ölkə</span>
+            </div>
+            <div class="lay2">
+                <span class="lay3"><span data-number="2000">2000</span>+</span> <br>
+                <span class="lay4">Əməkdaş</span>
+            </div>
+        </div>
+
+    </div>
+    <div id="fay">
+        <h1 id="fay4">HEYYƏTİMİZ</h1>
+        <p id="fay5">Sizə xidmət etməkdən qürur duyan personal heyyətimiz</p>
+        <div id="fay1">
+            <div class="fay1">
+                <div class="fay2">
+                    <div class="fay3">
+                        <img class="fay6" src="man.jpeg" alt="">
+                    </div>
+                    <h1 class="fay7">Faiq Vəliyev</h1>
+                    <p class="fay8">Direktor</p>
+                    <p class="fay9">"Əminəm ki, dünyanının ən böyük kargo şirkəti olacağıq!"</p>
+                    <img class="fay10" src="sosial.png" alt="">
+                </div>
+            </div>
+            <div class="fay1">
+                <div class="fay2">
+                    <div class="fay3">
+                        <img class="fay6" src="woman.jpg" alt="">
+                    </div>
+                    <h1 class="fay7">Leyla Əliyeva</h1>
+                    <p class="fay8">Vitse-Direktor</p>
+                    <p class="fay9">"Sizlərə xidmət etməkdən qürur duyuruq!"</p>
+                    <img class="fay10" src="sosial.png" alt="">
+                </div>
+            </div>
+            <div class="fay1">
+                <div class="fay2">
+                    <div class="fay3">
+                        <img class="fay6" src="men.jpg" alt="">
+                    </div>
+                    <h1 class="fay7">Əmrah Ağayev</h1>
+                    <p class="fay8">Marketing direktor</p>
+                    <p class="fay9">"Bir gün bizi bütün dünya tanıyacaq, buna əminəm!"</p>
+                    <img class="fay10" src="sosial.png" alt="">
+                </div>
+            </div>
+            <div class="fay1">
+                <div class="fay2">
+                    <div class="fay3">
+                        <img class="fay6" src="women.jpg" alt="">
+                    </div>
+                    <h1 class="fay7">Nigar Talıbova</h1>
+                    <p class="fay8">Satış direktoru</p>
+                    <p class="fay9">"Ümid edirəm, yaxın zamanda satışlarımız dahada artacaq!"</p>
+                    <img class="fay10" src="sosial.png" alt="">
+                </div>
+            </div>
+            <div class="fay1">
+                <div class="fay2">
+                    <div class="fay3">
+                        <img class="fay6" src="aha.jpg" alt="">
+                    </div>
+                    <h1 class="fay7">Murad Həsənov</h1>
+                    <p class="fay8">SMM meneceri</p>
+                    <p class="fay9">"Sosial şəbəkələrin ən məşhur kargo şirktəyik!"</p>
+                    <img class="fay10" src="sosial.png" alt="">
+                </div>
+            </div>
+            <div class="fay1">
+                <div class="fay2">
+                    <div class="fay3">
+                        <img class="fay6" src="van.jpg" alt="">
+                    </div>
+                    <h1 class="fay7">Günel Yusubova</h1>
+                    <p class="fay8">Satış meneceri</p>
+                    <p class="fay9">"Bütün dünya ölkələri ilə iş birliyimiz olacaq!"</p>
+                    <img class="fay10" src="sosial.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="nay">
+        <h1 id="nay2">PAKETLƏRİMİZ</h1>
+        <p id="nay3">Sizin üçün hazırladığımız illik paketlərimiz</p>
+        <div id="nay1">
+            <div class="nay">
+                <div class="nay1">
+                    <h1 class="nay2">SƏRFƏLİ</h1>
+                    <h1 class="nay3">1000 AZN</h1>
+                    <ul>
+                        <img id="ok" src="ok.png" alt="">
+                        <p id="ok1">Ayda bir dəfə çatdırılma</p> <br>
+                        <img id="ok" src="ok.png" alt="">
+                        <p id="ok1">Ayda bir dəfə daşıma</p> <br>
+                        <img id="ok" src="ok.png" alt="">
+                        <p id="ok1">Ayda bir dəfə sifariş imkanı</p> <br>
+                        <img id="ok" src="ok.png" alt="">
+                        <p id="ok1">Ayda bir dəfə hesabat</p><br>
+                        <img id="ok" src="ok.png" alt="">
+                        <p id="ok1">Mütəxəssis məsləhəti</p><br>
+                    </ul>
+                    <input type="submit" class="nay4" value="SİFARİŞ">
+
+                </div>
+            </div>
+
+            <div class="nay">
+                <div class="nay1">
+                    <h1 class="nay2">PREMİUM</h1>
+                    <h1 class="nay3">3000 AZN</h1>
+                    <ul>
+                        <img id="ok" src="ok.png" alt="">
+                        <p id="ok1">Ayda üç dəfə çatdırılma</p><br>
+                        <img id="ok" src="ok.png" alt="">
+                        <p id="ok1">Ayda üç dəfə daşıma</p><br>
+                        <img id="ok" src="ok.png" alt="">
+                        <p id="ok1">Ayda üç dəfə sifariş imkanı</p><br>
+                        <img id="ok" src="ok.png" alt="">
+                        <p id="ok1">Ayda üç dəfə hesabat</p><br>
+                        <img id="ok" src="ok.png" alt="">
+                        <p id="ok1">Mütəxəssis məsləhəti</p><br>
+                    </ul>
+                    <input type="submit" class="nay4" value="SİFARİŞ">
+                </div>
+            </div>
+            <div class="nay">
+                <div class="nay1">
+                    <h1 class="nay2">GOLD</h1>
+                    <h1 class="nay3">5000 AZN</h1>
+                    <ul>
+                        <img id="ok" src="ok.png" alt="">
+                        <p id="ok1">Ayda beş dəfə çatdırılma</p><br>
+                        <img id="ok" src="ok.png" alt="">
+                        <p id="ok1">Ayda beş dəfə daşıma</p><br>
+                        <img id="ok" src="ok.png" alt="">
+                        <p id="ok1">Ayda beş dəfə sifariş imkanı</p><br>
+                        <img id="ok" src="ok.png" alt="">
+                        <p id="ok1">Ayda beş dəfə hesabat</p><br>
+                        <img id="ok" src="ok.png" alt="">
+                        <p id="ok1">Mütəxəssis məsləhəti</p><br>
+                    </ul>
+                    <input type="submit" class="nay4" value="SİFARİŞ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ray">
+        <h1 id="ray2">ƏN ÇOX VERİLƏN SUALLAR</h1>
+        <div id="ray1">
+            <div class="ray1">
+                <img src="sual.png" alt="">
+                <p class="ray2">Sənədləşmə işləri necə olur?</p>
+                <p class="ray3">- Sənədləşmə işləri tam görülüb, yükünüz sizə təhvil verilir.</p>
+            </div>
+            <div class="ray1">
+                <img src="sual.png" alt="">
+                <p class="ray2">Dəniz daşınması hansı ölkələrdən olur?</p>
+                <p class="ray3">- Dəniz yolu ilə daşınma Xəzərə çıxışı olan bütün ölkələrdən olur.</p>
+            </div>
+            <div class="ray1">
+                <img src="sual.png" alt="">
+                <p class="ray2">Hava daşınması hansı ölkələrdən olur?</p>
+                <p class="ray3">- Hava daşınması istənilən ölkədən olur.</p>
+            </div>
+            <div class="ray1">
+                <img src="sual.png" alt="">
+                <p class="ray2">Quru daşınması hansı ölkələrdən olur?</p>
+                <p class="ray3">- Quru daşınması şəhərlərarası və ölkələrarası olur.</p>
+            </div>
+            <div class="ray1">
+                <img src="sual.png" alt="">
+                <p class="ray2">Təslimat işləri necə olur?</p>
+                <p class="ray3">- Təslimat işləri qapınızda həyata keçirilir.</p>
+            </div>
+            <div class="ray1">
+                <img src="sual.png" alt="">
+                <p class="ray2">Depolama necə həyata keçirilir?</p>
+                <p class="ray3">- Depomuz olan bütün ölkələrdə depolama olur.</p>
+            </div>
+            <div class="ray1">
+                <img src="sual.png" alt="">
+                <p class="ray2">Kuryer işləri necə olur?</p>
+                <p class="ray3">- Kuryer vasitəsilə bütün yüklər qapınızda sizə təhvil verilir.</p>
+            </div>
+            <div class="ray1">
+                <img src="sual.png" alt="">
+                <p class="ray2">Çatdırılma necə olur?</p>
+                <p class="ray3">- Yükünüz sifariş verdiyiniz ölkədən bir-başa sizin qapınıza çatdırılır.</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="pay">
+        <div id="pay1">
+            <div id="pay2">
+                <p class="pay">Niyə biz?</p>
+                <p class="pay1">Sürətli və etibarlıyıq</p>
+                <p class="pay2">Biz sizə dünyanın istənilən ölkəsindən ən sürətli və ən ucuz yükdaşıma xidmətini
+                    göstəririk</p>
+                <ul>
+                    <li>✅ Kargo exspress</li>
+                    <li>✅ Sürətli</li>
+                    <li>✅ Etibarlı</li>
+                    <li>✅ Sərfəli</li>
+                    <li>✅ Dəqiq</li>
+                </ul>
+            </div>
+            <div id="pay2">
+                <img id="pay3" src="yuk.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="yay">
+        <h1 id="yay0">ƏLAQƏ</h1>
+        <div id="yay1">
+            <div id="yay2">
+                <form action="#" method="post">
+                    <div class="yay">
+                        <div class="yay1">
+                            <input type="text" class="yay2" placeholder="adınız">
+                        </div>
+                        <div class="yay3">
+                            <input type="text" class="yay2" placeholder="soyadınız">
+                        </div>
+                    </div>
+                    <div id="yay4">
+                        <div class="yay4">
+                            <input type="text" class="yay2" placeholder="email adresiniz">
+                        </div>
+                    </div>
+                    <div class="yay5">
+                        <textarea name="" id="" class="yay2" placeholder="mesajınız..." cols="30" rows="10"
+                            style="margin-top: 0px; margin-bottom: 0px; height: 294px;"></textarea>
+                    </div>
+                    <div class="yay4">
+                        <div class="yay6">
+                            <input type="submit" class="yay7" value="Göndər">
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div id="yay3">
+                <div id="yay4">
+                    <p class="yay8">Əlaqə Məlumatı</p>
+                    <p class="yay9">Ünvan: <br> Bakı şəhəri, Nərimanov rayonu</p>
+                    <p class="yay9">Telefon: <br> +994555000000</p>
+                    <p class="yay9">Email: <br>info@kargo.az</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="day">
+        <div id="day1">
+            <div class="day">
+                <h1 class="day1">HAQQIMIZDA</h1>
+                <p class="day2">Biz sizə dünyanın istənilən ölkəsindən ən sürətli və ən sərfəli yükdaşıma xidmətini
+                    göstəririk, sifariş etdiyiniz bağlamaları sizə qapınızda təhvil veririk, sizə xidmət etməkdən qürur
+                    duyuruq!</p>
+            </div>
+            <div style="text-align: center" class="day">
+                <h1 class="day1">MENYULAR</h1>
+                <p class="day2">ANA SƏHİFƏ <br> HAQQIMIZDA <br> XİDMƏTLƏRİMİZ <br> ÜNVANLARIMIZ <br>BLOQLAR
+                    <br>HEYYƏTİMİZ <br>PAKETLƏRİMİZ</p>
+            </div>
+            <div class="day">
+                <h1 class="day1">QEYD OL</h1> <input style="width: 55%; height: 30px;" type="text" value="email"><input
+                    style="background: #e97408; width: 40%; height: 30px;" type="submit" value="Göndər">
+                <h1 class="day1">BİZİ İZLƏYİN</h1> <img style="width: 200px; height: 70px;" src="cok.png" alt="">
+            </div>
+            <hr style="color: white">
+            <div id="day2">
+                <p id="day3">Copyright ©2021 Müəllif hüquqları qorunur!</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
